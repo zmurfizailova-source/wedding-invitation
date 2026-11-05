@@ -1,0 +1,370 @@
+
+<!DOCTYPE html>
+<html lang="ky">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Абубакир & Маржана | Үйлөнүү тою</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #fffaf9;
+      color: #654b50;
+      font-family: 'Montserrat', sans-serif;
+      text-align: center;
+    }
+
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px 20px;
+      background:
+        linear-gradient(rgba(255, 248, 248, 0.45),
+                        rgba(255, 248, 248, 0.75)),
+        url("https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1600&q=85");
+      background-size: cover;
+      background-position: center;
+    }
+
+    .small-title {
+      font-size: 12px;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 25px;
+    }
+
+    .names {
+      font-family: 'Great Vibes', cursive;
+      font-size: clamp(65px, 12vw, 115px);
+      font-weight: 400;
+      color: #a76e7d;
+      line-height: 1.2;
+    }
+
+    .ampersand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 35px;
+      color: #a76e7d;
+      margin: 5px 0;
+    }
+
+    .date {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 25px;
+      letter-spacing: 4px;
+      margin-top: 30px;
+    }
+
+    .section {
+      padding: 85px 20px;
+      max-width: 850px;
+      margin: auto;
+    }
+
+    .section-title {
+      font-family: 'Great Vibes', cursive;
+      font-size: 55px;
+      color: #b77d8f;
+      font-weight: 400;
+      margin-bottom: 25px;
+    }
+
+    .invitation-text {
+      font-size: 15px;
+      line-height: 2;
+      max-width: 650px;
+      margin: auto;
+      color: #755c61;
+    }
+
+    .divider {
+      width: 65px;
+      height: 1px;
+      background: #c99ba7;
+      margin: 30px auto;
+    }
+
+    .countdown-section {
+      background: #f8e9ec;
+      padding: 75px 15px;
+    }
+
+    .countdown {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 35px;
+    }
+
+    .time-box {
+      background: #fffaf9;
+      width: 105px;
+      padding: 20px 10px;
+      border-radius: 8px;
+    }
+
+    .time-box span {
+      display: block;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 38px;
+      color: #a76e7d;
+    }
+
+    .time-box p {
+      font-size: 10px;
+      letter-spacing: 2px;
+      margin-top: 5px;
+      text-transform: uppercase;
+    }
+
+    .location {
+      background: #fff5f5;
+      padding: 75px 20px;
+    }
+
+    .address {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 24px;
+      line-height: 1.8;
+      margin: 20px auto;
+    }
+
+    .time {
+      font-size: 16px;
+      letter-spacing: 2px;
+      margin-top: 15px;
+    }
+
+    .rsvp {
+      padding: 85px 20px;
+    }
+
+    .rsvp-text {
+      font-size: 14px;
+      line-height: 2;
+      max-width: 550px;
+      margin: 0 auto 30px;
+    }
+
+    .rsvp-button {
+      display: inline-block;
+      padding: 16px 35px;
+      background: #b77d8f;
+      color: white;
+      text-decoration: none;
+      border-radius: 35px;
+      font-size: 13px;
+      letter-spacing: 1px;
+      transition: 0.3s;
+    }
+
+    .rsvp-button:hover {
+      background: #9f6478;
+      transform: translateY(-3px);
+    }
+
+    footer {
+      background: #f8e9ec;
+      padding: 40px 15px;
+    }
+
+    footer .footer-names {
+      font-family: 'Great Vibes', cursive;
+      font-size: 45px;
+      color: #a76e7d;
+    }
+
+    footer p {
+      font-size: 11px;
+      margin-top: 15px;
+      letter-spacing: 2px;
+    }
+
+    @media (max-width: 480px) {
+      .time-box {
+        width: 75px;
+        padding: 15px 5px;
+      }
+
+      .time-box span {
+        font-size: 30px;
+      }
+
+      .time-box p {
+        font-size: 8px;
+      }
+
+      .section {
+        padding: 65px 20px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- БАШКЫ БЕТ -->
+  <section class="hero">
+    <p class="small-title">Биздин үйлөнүү тоюбузга чакыруу</p>
+
+    <h1 class="names">Abubakir</h1>
+    <div class="ampersand">&</div>
+    <h1 class="names">Marjana</h1>
+
+    <div class="divider"></div>
+
+    <p class="date">15 · 11 · 2026</p>
+  </section>
+
+  <!-- ЧАКЫРУУ -->
+  <section class="section">
+    <h2 class="section-title">Урматтуу коноктор!</h2>
+
+    <p class="invitation-text">
+      Сиздерди биздин үйлөнүү тоюбуздун урматына
+      арналган салтанаттуу кечеге чакырабыз.
+      <br><br>
+      Бул биздин жашообуздагы эң өзгөчө күндөрдүн бири.
+      Бул кубанычтуу күнү сиздерди жаныбызда көрүү
+      биз үчүн чоң бакыт!
+      <br><br>
+      Кубанычыбызды тең бөлүшүп, ак тилегиңиздерди
+      айтып, тоюбуздун көркүнө көрк кошуп кетиңиздер!
+    </p>
+
+    <div class="divider"></div>
+
+    <p class="invitation-text">
+      Сиздерди чыдамсыздык менен күтөбүз!
+    </p>
+  </section>
+
+  <!-- COUNTDOWN -->
+  <section class="countdown-section">
+    <h2 class="section-title">Тойго чейин калды</h2>
+
+    <div class="countdown">
+      <div class="time-box">
+        <span id="days">00</span>
+        <p>Күн</p>
+      </div>
+
+      <div class="time-box">
+        <span id="hours">00</span>
+        <p>Саат</p>
+      </div>
+
+      <div class="time-box">
+        <span id="minutes">00</span>
+        <p>Мүнөт</p>
+      </div>
+
+      <div class="time-box">
+        <span id="seconds">00</span>
+        <p>Секунд</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ТОЙ ӨТҮҮЧҮ ЖЕР -->
+  <section class="location">
+    <h2 class="section-title">Той өтүүчү жер</h2>
+
+    <p class="address">
+      Степное айылы<br>
+      Северное көчөсү, 4/3-үй
+    </p>
+
+    <div class="divider"></div>
+
+    <p class="time">15-ноябрь, 2026-жыл</p>
+    <p class="time">Саат 11:00</p>
+  </section>
+
+  <!-- RSVP -->
+  <section class="rsvp">
+    <h2 class="section-title">Сизди күтөбүз!</h2>
+
+    <p class="rsvp-text">
+      Тойго катыша турганыңызды алдын ала билдирип коюуңузду суранабыз.
+      Сиздин катышууңуз биз үчүн абдан маанилүү!
+    </p>
+
+    <a
+      href="https://docs.google.com/forms/d/e/1FAIpQLSfGErfnXEsaXbNekS1AjoVmXRUxTvTjW1wmEIDqdNkGdurDlQ/viewform"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="rsvp-button"
+    >
+      Мен сөзсүз келем ♡
+    </a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-names">Abubakir & Marjana</div>
+    <p>15 · 11 · 2026</p>
+    <p>Сүйүү менен, Абубакир жана Маржана ♡</p>
+  </footer>
+
+  <!-- COUNTDOWN SCRIPT -->
+  <script>
+    const weddingDate = new Date(2026, 10, 15, 11, 0, 0).getTime();
+
+    function updateCountdown() {
+      const now = new Date().getTime();
+      const difference = weddingDate - now;
+
+      if (difference <= 0) {
+        document.querySelector(".countdown").innerHTML =
+          "<h2>Бүгүн биздин өзгөчө күнүбүз! ♡</h2>";
+        return;
+      }
+
+      const days = Math.floor(
+        difference / (1000 * 60 * 60 * 24)
+      );
+
+      const hours = Math.floor(
+        (difference / (1000 * 60 * 60)) % 24
+      );
+
+      const minutes = Math.floor(
+        (difference / (1000 * 60)) % 60
+      );
+
+      const seconds = Math.floor(
+        (difference / 1000) % 60
+      );
+
+      document.getElementById("days").textContent = days;
+      document.getElementById("hours").textContent =
+        String(hours).padStart(2, "0");
+      document.getElementById("minutes").textContent =
+        String(minutes).padStart(2, "0");
+      document.getElementById("seconds").textContent =
+        String(seconds).padStart(2, "0");
+    }
+
+    updateCountdown();
+    setInterval(updateCountdown, 1000);
+  </script>
+
+</body>
+</html>
+
